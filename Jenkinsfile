@@ -53,7 +53,7 @@ pipeline{
                                  sshPublisherDesc(
                                      configName: "ubuntu-server2",
                                      transfers: [
-                                        sshTransfer(sourceFiles: "/home/proger/app/${params.FILE_NAME}")
+                                        sshTransfer(sourceFiles: "${params.FILE_NAME}")
                                      ]
                                  )
                              ]
