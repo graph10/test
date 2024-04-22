@@ -45,7 +45,7 @@ pipeline{
                 sh """./${params.FILE_NAME}"""
             }
         }
-        stage('Sending an artifact to Prod'){
+        stage('Sending an artifact to ubuntu-server2'){
             steps{
 			    // Настройки плагина Publish Over SSH
                 sshPublisher(
